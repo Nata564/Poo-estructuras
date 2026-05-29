@@ -2,4 +2,4 @@
 Integrantes:
 Natalia Jativa 
 Nathaly Bonilla 
-María José Cortez 
+_maria jose cortez 
