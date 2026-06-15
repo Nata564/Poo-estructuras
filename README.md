@@ -3,4 +3,4 @@
 Integrantes:
 Natalia Jativa 
 Nathaly Bonilla 
-Maria Jose cortez 
+Jheremy de Jesus
