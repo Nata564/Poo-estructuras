@@ -3,12 +3,7 @@ public class DepositoAgua {
     private DepositoAgua depositoDesborde;
 
 public DepositoAgua(double capacidad) {
-        if (capacidad <= 0) {
-            System.out.println("La capacidad debe ser mayor a 0. Se le va a asignar 100 de capacidad");
-            this.capacidad = 100.0;
-        } else {
-            this.capacidad = capacidad;
-        }
+    this.capacidad = capacidad;
         this.volumenActual = 0;
         this.depositoDesborde = null;
     }
@@ -47,10 +42,9 @@ public DepositoAgua(double capacidad) {
     }
 
     public void mostrarEstado() {
-        double espacioLibre = capacidad - volumenActual;
         System.out.println("Capacidad Máxima: " + capacidad + " L");
         System.out.println("Volumen Actual  : " + volumenActual + " L");
-        System.out.println("Espacio Libre   : " + espacioLibre + " L");
+        System.out.println("Espacio Libre   : " + (capacidad-volumenActual) + " L");
     }
 
     public void agregarAgua(double cantidad) {
@@ -60,7 +54,7 @@ public DepositoAgua(double capacidad) {
             System.out.println("Se agregaron "+cantidad+" L.");
         } else {
             espacioLibre = capacidad - volumenActual;
-            double sobrante = cantidad - espacioLibre;
+            double sobrante = cantidad-espacioLibre;
             volumenActual = capacidad;
             System.out.println("¡ALERTA! Al añadirle "+cantidad+" el depósito se desbordo. Sobran: " + sobrante + " L.");
             
