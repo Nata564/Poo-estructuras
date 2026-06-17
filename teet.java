@@ -1,2 +1,0 @@
-  tengo pereza 
- 
