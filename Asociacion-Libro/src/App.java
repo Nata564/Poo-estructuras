@@ -41,6 +41,8 @@ e4.mostrarEstado();
 System.out.println("---lector #5---");
 e5.mostrarEstado();
 
+
+dghsudghiesrh
     }
     }
 
