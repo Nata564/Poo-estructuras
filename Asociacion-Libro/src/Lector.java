@@ -27,7 +27,7 @@ public void setCedula(String cedula){
 
 public void tomarPrestado(Libro libro){
     if(libroActual != null){
-        System.out.println(nombre+"ya tiene el libro '"+libroActual.getTitulo());
+        System.out.println(nombre+" ya tiene el libro '"+libroActual.getTitulo()+"'");
     }else{
         if(libro.prestar()){
             libroActual=libro;
@@ -44,7 +44,7 @@ public void regresarLibro(){
 }
 public void mostrarEstado(){
     String estado = (libroActual != null) ? libroActual.getTitulo() :"sin titulo";
-    System.out.println("lector" + nombre + "libro" + estado);
+    System.out.println("Lector:" + nombre + "\nLibro:" + estado);
 
 
 }

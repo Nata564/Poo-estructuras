@@ -29,7 +29,7 @@ public void setAutor(String autor){
     this.autor=autor;
 }
 
-public boolean isDsiponible(){ //get disponible
+public boolean isDisponible(){ //get disponible
     return this.disponible;
 }
 public void setDisponible(boolean disponible){
